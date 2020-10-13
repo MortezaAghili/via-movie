@@ -1,0 +1,14 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: Via-Movie
+  description: This is a simple microservice to find movie's trailer
+basePath: /api/v1
+consumes:
+  - application/json
+produces:
+  - application/json
+schemes:
+  - http
+
+paths:
