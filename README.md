@@ -19,6 +19,7 @@
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage) 
+* [Endpoints](#endpoints)
 
 
 
@@ -36,9 +37,12 @@ I decided to go with a few libraries which I believe are very beneficial/powerfu
 * **Typescript**
 * **RxJs**
 * **Swagger**
-* Request 
 * Jest
 * tslint
+* Prometheus
+* CSRF
+* Request
+* response-time
 
 
 
@@ -86,9 +90,19 @@ docker-compose up
 ```
 
 
-<!-- USAGE EXAMPLES -->
 ## Usage
 
 Either you decided to go with or without **Docker** now you're ready to test the API. You can navigate to http://localhost:4030/swagger and check the documentation and try a film title like **transformers-dark-of-the-moon-2011** live.
 
-Notice that I have added a **caching layer** to make the API faster. The default cache expires time set as a **CACHE_DURATION** in the `.env` file.
+Notice that I have added a **caching layer** to make the API faster. The default cache expires time set as a **CACHE_DURATION** in the `.env` file.  
+* Notice in the real world scenario, I definitely, use `Kubernetes`, `Helm` to make the service serverless and host it on `AWS`.
+
+
+## Endpoints
+Here you can find all the endpoints that we have in this project:
+| Endpoint | Desciription|
+| :---: | :---: |
+| `/api/v1/trailer/movie/{movie-title}` | Get movie's trailer |
+| `/metrics` | Service metrics by Prometheus |
+| `/healthcheck` | Check service health |
+
