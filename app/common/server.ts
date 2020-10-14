@@ -1,6 +1,7 @@
 import * as express from 'express';
 import * as path from 'path';
 import * as partialResponse from 'express-partial-response';
+import apicache from 'apicache'
 import { InversifyExpressServer } from 'inversify-express-utils';
 const responseTime = require('response-time');
 
@@ -71,6 +72,10 @@ export default class ExpressServer {
 
       // Add Compression support
       addCompression(app);
+
+      // Add Caching to all routes
+      let cache = apicache.middleware
+      app.use(cache(process.env.CACHE_DURATION))
     });
   }
 
