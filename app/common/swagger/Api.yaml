@@ -12,3 +12,18 @@ schemes:
   - http
 
 paths:
+  /trailer/movie/{id}:
+    get:
+      tags:
+        - Trailer
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The movie name to retrieve the trailer
+          type: string
+      responses:
+        200:
+          description: Return the movie trailer info
+        404:
+          description: movie/trailer NOT FOUND
