@@ -105,4 +105,5 @@ Here you can find all the endpoints that we have in this project:
 | `/api/v1/trailer/movie/{movie-title}` | Get movie's trailer |
 | `/metrics` | Service metrics by Prometheus |
 | `/healthcheck` | Check service health |
+| `/swagger` | Swagger docs |
 
