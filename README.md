@@ -22,10 +22,9 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![API][product-screenshot]](https://example.com)
+![Screenshot](api-screenshot.png)
 
 This is a **Node.js**, **Express.js** Backend project which provides you a video trailer link of your requested movie. Here are a few things that worth to be mentioned. First of all, For the sake of scalability, I containerized the service and also used **CLUSTER_MODE** (which is switchable in the `.env` file and also, added a **caching layer** on top of all my APIs.
 
@@ -93,6 +92,3 @@ docker-compose up
 Either you decided to go with or without **Docker** now you're ready to test the API. You can navigate to http://localhost:4030/swagger and check the documentation and try a film title like **transformers-dark-of-the-moon-2011** live.
 
 Notice that I have added a **caching layer** to make the API faster. The default cache expires time set as a **CACHE_DURATION** in the `.env` file.
-
-
-
