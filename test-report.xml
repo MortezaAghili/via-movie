@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/morteza/Codes/personal/nodejs/viaMovie/app/api/services/film.services.spec.ts">
+    <testCase name="Film Service Tests should call and retrive correct information" duration="662"/>
+    <testCase name="Film Service Tests should retrive correct Movie ID" duration="659"/>
+    <testCase name="Film Service Tests should return null with wrong movie title" duration="411"/>
+  </file>
+  <file path="/Users/morteza/Codes/personal/nodejs/viaMovie/app/api/services/trailer.services.spec.ts">
+    <testCase name="Trailer Service Tests should call and retrive correct information" duration="422"/>
+    <testCase name="Trailer Service Tests should get undefiend result with wrong movie ID" duration="437"/>
+  </file>
+  <file path="/Users/morteza/Codes/personal/nodejs/viaMovie/app/common/utils/formatter.spec.ts">
+    <testCase name="The ExtractMovieID Tests should return null when argument is null" duration="1"/>
+    <testCase name="The ExtractMovieID Tests should extract a valid movie ID" duration="1"/>
+    <testCase name="The GetTrilerInfo Tests should return Correct video name" duration="1"/>
+    <testCase name="The GetTrilerInfo Tests should return Correct video youtube url" duration="1"/>
+  </file>
+  <file path="/Users/morteza/Codes/personal/nodejs/viaMovie/app/api/services/response-builder.spec.ts">
+    <testCase name="Error Response Builder Tests can prepare and verify response builder" duration="1"/>
+  </file>
+</testExecutions>
