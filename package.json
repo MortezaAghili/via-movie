@@ -1,13 +1,14 @@
 {
   "name": "viamovie",
   "version": "1.0.0",
-  "description": "This is a simple microservice to find movie's trailer",
+  "description": "This is a simple microservice that helps find movie's trailer",
   "main": "index.js",
   "author": "Morteza Aghilinasab",
   "license": "ISC",
   "scripts": {
     "dev": "cross-env NODE_ENV=development node build.js && backpack dev",
     "dev:debug": "cross-env NODE_ENV=development node build.js && cross-env DEBUG=express:* backpack dev",
+    "compile": "cross-env NODE_ENV=production node build.js && backpack build",
     "test": "cross-env NODE_ENV=test node build.js && npm run lint && jest --forceExit --config unit.config.json --detectOpenHandles",
     "lint": "npm run tslint -- -o reports/lint_issues.json -t json --force \"app/**/*.ts\" ",
     "lint:console": "npm run tslint -- --force \"app/**/*.ts\" ",

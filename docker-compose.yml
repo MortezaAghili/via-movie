@@ -1,0 +1,12 @@
+version: "3"
+services:
+  api:
+    build: .
+    container_name: "api"
+    restart: always
+    ports:
+      - 4030:4030
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "10"
